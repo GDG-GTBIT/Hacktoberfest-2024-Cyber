@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Keylogger
 
 This keylogger project captures keystrokes and saves them to a log file. It features real-time monitoring of user input and offers a web interface for viewing the logs. This initiative is part of Hacktoberfest. It is designed for both Linux and Windows platforms and invites contributions to expand its capabilities, including the potential implementation of encryption for secure log storage.
