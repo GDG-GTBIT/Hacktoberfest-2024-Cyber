@@ -29,8 +29,8 @@ The program:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/mac-address-changer.git
-cd mac-address-changer
+git clone https://github.com/GDG-GTBIT/Hacktoberfest-2024-Cyber.git
+cd Hacktoberfest-2024-Cyber/altermac
 ```
 
 2. Build the project using `make`:
