@@ -39,21 +39,21 @@ The keylogger uses the `pynput` library to monitor keyboard events. Keystrokes a
 For Windows:
 Run the keylogger:
 ```bash
-    python keylogger.py
+python keylogger.py
 ```
 Start the flask server:
 ```bash
-    python app.py
+python app.py
 ```
 
 For Linux:
 Run the keylogger:
 ```bash
-    python3 keylogger.py
+python3 keylogger.py
 ```
 Start the flask server:
 ```bash
-    python3 app.py
+python3 app.py
 ```
 ## Accessing the Logs:
 
