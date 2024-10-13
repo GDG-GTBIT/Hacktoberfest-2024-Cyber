@@ -37,6 +37,7 @@ The keylogger uses the `pynput` library to monitor keyboard events. Keystrokes a
 ## Usage
 
 For Windows:
+
 Run the keylogger:
 ```bash
 python keylogger.py
@@ -47,6 +48,7 @@ python app.py
 ```
 
 For Linux:
+
 Run the keylogger:
 ```bash
 python3 keylogger.py
