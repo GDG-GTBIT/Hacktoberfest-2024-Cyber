@@ -10,7 +10,22 @@ A simple network scanner built using Scapy in Python. It provides two types of n
 
 ## Requirements
 - Python 3.x
-- Scapy (pip install scapy)
+- Scapy
+
+## Installation
+
+1. **Clone the repository**
+```bash
+  git clone https://github.com/GDG-GTBIT/Hacktoberfest-2024-Cyber.git
+  ```
+2. **Navigate to the repository**
+```bash
+  cd Hacktoberfest-2024-Cyber/Network-Scanner
+  ```
+3. **Install the required libraries (if you haven't already):**
+```bash
+  pip install -r requirements.txt
+  ```
 
   
 ## Usage/Examples
@@ -52,7 +67,7 @@ A TCP scan sends TCP SYN packets to the specified ports, and identifies open por
 ### Example
 
 ```
-python3 scanner.py TCP 192.168.2.1 --range 0 1000
+python3 Network_scanner.py TCP 192.168.2.1 --range 0 1000
 
 ````
 
@@ -72,24 +87,26 @@ This command scans all ports from 0 to 1000 on the target 192.168.2.1.
 
 ### ARP Scan (Single IP):
 ```
-python3 scanner.py ARP 192.168.1.1
+python3 Network_scanner.py ARP 192.168.1.1
 ```
 
 ### ARP Scan (IP Range):
 ```
-python3 scanner.py ARP 192.168.1.1/24
+python3 Network_scanner.py ARP 192.168.1.1/24
 ```
 
 ### TCP Scan (Specific Ports):
 ```
-python3 scanner.py TCP 192.168.1.1 22 80 443
+python3 Network_scanner.py TCP 192.168.1.1 22 80 443
 ```
 
 ### TCP Scan (Port Range):
 
 ```
-python3 scanner.py TCP 192.168.1.1 --range 0 1000
+python3 Network_scanner.py TCP 192.168.1.1 --range 0 1000
 ```
+
+### Note: In Windows Machine running ``python3`` can invoke an error, In such cases the problem can easily be fixed by substituting ``python3`` with ``python`` 
 
 
 # Contributing to Network-Scanner
